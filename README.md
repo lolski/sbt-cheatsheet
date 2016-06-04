@@ -73,3 +73,16 @@ libraryDependencies ++= {
   )
 }
 ```
+
+### Commands
+These commands are
+```
+sbt run                                      # runs your program
+sbt sbtVersion                               # displays sbt version
+sbt console                                  # opens REPL console
+sbt compile                                  # compiles project
+sbt clean                                    # clean
+sbt "test-only org.yourcompany.YourTestSpec" # runs a single test
+sbt test                                     # runs every tests
+sbt ";clean ;compile; run"                   # combines multiple commands in a single invocation
+```
