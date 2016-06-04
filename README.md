@@ -2,10 +2,12 @@
 
 Are you a Scala first-timer who find yourself fighting with the build system for even the simplest of tasks? Then this guide is for you. If you are a Scala veteran that just never bothers to remember the syntax, then this is for you as well.
 
+Also, remember that this guide assumes SBT 0.13.x.
+
 ### Hello World
 Let's go back to basic! This is how to prepare a project's base directory:
 ```
-mkdir -p hello-world             # your project dir
+mkdir hello-world             # your project dir
 cd hello-world
 touch build.sbt                  # sbt build definition file
 mkdir -p src/main/scala          # .scala files goes here
