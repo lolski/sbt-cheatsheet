@@ -3,7 +3,6 @@
 Are you a Scala first-timer who find yourself fighting with the build system for even the simplest of tasks? Then this guide is for you. If you are a Scala veteran that just never bothers to remember the syntax, then this is for you as well.
 
 ### Hello World
-
 Let's go back to basic! This is how to prepare a project's base directory:
 ```
 mkdir -p hello-world             # your project dir
@@ -53,8 +52,7 @@ Horray!
 
 
 ### Dependencies
-
-Specify dependencies one by one in `build.sbt`:
+Specifying multiple dependencies one by one in `build.sbt`:
 ```
 name         := "hello-world"
 scalaVersion := "2.11.8"
@@ -62,7 +60,7 @@ libraryDependencies += "org.apache.commons" % "commons-lang3" % "3.4"
 libraryDependencies += "org.apache.commons" % "commons-io" % "1.3.2"
 ```
 
-Alternatively, specify as a `Seq`
+Alternatively, you can also specify them as a `Seq`
 ```
 name         := "hello-world"
 scalaVersion := "2.11.8"
@@ -75,7 +73,8 @@ libraryDependencies ++= {
 ```
 
 ### Commands
-These commands are
+SBT commands that are most likely to be used on a daily basis
+
 ```
 sbt run                                      # runs your program
 sbt sbtVersion                               # displays sbt version
